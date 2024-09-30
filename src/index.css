@@ -1,3 +1,5 @@
+@import url("@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,8 +15,7 @@ html {
 }
 
 body {
-  font-family: var(--font-family);
-  color: var(--text-color);
+  font-family: "Public Sans", sans-serif;
   background-color: #f5f5f5;
   margin: 0;
   padding: 0;

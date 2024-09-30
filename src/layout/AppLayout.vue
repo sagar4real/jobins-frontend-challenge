@@ -10,7 +10,6 @@ import AppTopbar from "./AppTopbar.vue";
     <div class="layout-main-container">
       <div class="layout-main">
         <app-topbar></app-topbar>
-
         <router-view></router-view>
       </div>
     </div>
