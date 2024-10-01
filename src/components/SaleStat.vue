@@ -1,6 +1,6 @@
 <template>
   <section
-    class="sale-section bg-white min-h-[200px] rounded-[12px] py-6 px-8 flex items-center justify-center"
+    class="sale-section bg-white min-h-[200px] rounded-[12px] py-6 px-4 flex items-center justify-center"
   >
     <div class="stat-wrapper flex gap-10">
       <div class="stat-left flex items-center">
@@ -100,23 +100,23 @@
           </defs>
         </svg>
       </div>
-      <div class="w-[1px] h-32 bg-[#DBDADE]"></div>
+      <div class="w-[1px] bg-[#DBDADE]"></div>
       <div class="stat-right flex gap-6 flex-col">
         <div>
           <h1 class="text-heaading3 font-semibold">Total Sales & Costs</h1>
-          <p class="text-heading font-medium text-[#8B909A]">Last 7 days</p>
+          <p class="text-heading font-medium text-[#8B909A] mt-2">Last 7 days</p>
         </div>
         <div>
           <h1 class="font-bold text-display text-[#23272E]">$350k</h1>
-          <div class="flex gap-2">
-            <span class="text-[#1EB564] contents">
+          <div class="flex gap-2 mt-2">
+            <span class="text-[#1EB564] flex gap-[2px]">
               <svg
                 width="12"
                 height="12"
                 viewBox="0 0 12 12"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="mt-[4px]"
+                class="mt-[6px]"
               >
                 <path
                   d="M5.99998 0.95004C6.08887 0.95004 6.17221 0.963818 6.24998 0.991374C6.32776 1.01893 6.39998 1.06626 6.46665 1.13337L10.8667 5.53337C11 5.66671 11.0667 5.82493 11.0667 6.00804C11.0667 6.19115 11 6.3496 10.8667 6.48337C10.7333 6.61671 10.5778 6.68337 10.4 6.68337C10.2222 6.68337 10.0667 6.61671 9.93332 6.48337L6.66665 3.21671L6.66665 10.6834C6.66665 10.8723 6.60265 11.0278 6.47465 11.15C6.34665 11.2723 6.18843 11.3334 5.99998 11.3334C5.81109 11.3334 5.65265 11.2694 5.52465 11.1414C5.39665 11.0134 5.33287 10.8552 5.33332 10.6667L5.33332 3.21671L2.06665 6.48337C1.93332 6.61671 1.77776 6.68337 1.59998 6.68337C1.42221 6.68337 1.26665 6.61671 1.13332 6.48337C0.999984 6.35004 0.933317 6.1916 0.933317 6.00804C0.933317 5.82448 0.999984 5.66626 1.13332 5.53337L5.53332 1.13337C5.59999 1.06671 5.67221 1.01937 5.74998 0.991374C5.82776 0.963374 5.9111 0.949596 5.99998 0.95004Z"
@@ -125,10 +125,10 @@
               </svg>
               856k
             </span> 
-            <p>vs last 7 days</p>
+            <p class="text-heading font-medium text-[#8B909A]">vs last 7 days</p>
           </div>
         </div>
-      </div>
+      </div>                                                   
     </div>
   </section>
 </template>

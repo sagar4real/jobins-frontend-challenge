@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import SaleStat from "@/components/SaleStat.vue";
+import ProfitStat from "@/components/ProfitStat.vue"
 </script>
 <template>
   <section>
@@ -7,10 +8,10 @@ import SaleStat from "@/components/SaleStat.vue";
       <div class="sm:col-span-2">
         <Sale-Stat></Sale-Stat>
       </div>
-      <div class="sm:col-span-2 bg-green-200">
-        Second Child (smallest, spans 1 column)
+      <div class="sm:col-span-1">
+        <Profit-Stat></Profit-Stat>
       </div>
-      <div class="sm:col-span-2 bg-red-200">
+      <div class="sm:col-span-3 bg-red-200">
         Third Child (largest, spans 3 columns)
       </div>
     </div>
