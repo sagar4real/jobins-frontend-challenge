@@ -1,19 +1,40 @@
 <script lang="ts" setup>
 import SaleStat from "@/components/SaleStat.vue";
-import ProfitStat from "@/components/ProfitStat.vue"
+import ProfitStat from "@/components/ProfitStat.vue";
+import ProgressStat from "@/components/ProgressStat.vue";
+import Info from "@/components/info.vue";
 </script>
+
 <template>
-  <section>
-    <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-6 gap-2">
-      <div class="sm:col-span-2">
-        <Sale-Stat></Sale-Stat>
+  <section class="p-4">
+    <div class="stat-grid grid grid-cols-1 sm:grid-cols-3 md:grid-cols-6 gap-4">
+      <!-- Sale Stat -->
+      <div class="sm:col-span-1 md:col-span-2">
+        <SaleStat />
       </div>
-      <div class="sm:col-span-1">
-        <Profit-Stat></Profit-Stat>
+
+      <!-- Profit Stat -->
+      <div class="sm:col-span-1 md:col-span-1">
+        <ProfitStat />
       </div>
-      <div class="sm:col-span-3 bg-red-200">
-        Third Child (largest, spans 3 columns)
+
+      <!-- Progress Stat -->
+      <div class="sm:col-span-1 md:col-span-3">
+        <ProgressStat />
+      </div>
+
+      <!-- info -->
+      <div class="sm:col-span-1 md:col-span-6">
+        <Info />
       </div>
     </div>
   </section>
 </template>
+<!-- 
+<style lang="postcss" scoped>
+@media (min-width: 1000px) {
+  .stat-grid {
+    @apply grid-cols-3; /* Ensures 3 columns in a single row for screens 1676px and above */
+  }
+}
+</style> -->
