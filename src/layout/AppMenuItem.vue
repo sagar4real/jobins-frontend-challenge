@@ -87,7 +87,7 @@ const checkActiveRoute = (item) => {
       tabindex="0"
       :to="item.to"
     >
-      <div class="py-[9px] flex gap-2">
+      <div class="py-[9px] flex gap-2 px-2" :class="item.label == 'Dashboard' ? 'active' : '' ">
         <img :src="item.icon" alt="" />
         <span class="font-medium text-[#8B909A] text-heading2">{{
           item.label
@@ -112,4 +112,11 @@ const checkActiveRoute = (item) => {
   </li>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="postcss" scoped>
+.active { 
+  @apply bg-[#F3F4F8] rounded-[6px] ;
+  span{
+    @apply text-black;
+  }
+}
+</style>

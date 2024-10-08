@@ -14,8 +14,8 @@ const model = ref([
   {
     label: "PRODUCTS",
     items: [
-    { label: "Add Product", icon: "/svg/home.svg", to: "/" },
-      { label: "Product List", icon: "/svg/cart.svg", to: "/" },
+    { label: "Add Product", icon: "/svg/circle-plus.svg", to: "/" },
+      { label: "Product List", icon: "/svg/box.svg", to: "/" },
     ],
   },
 ]);
@@ -24,7 +24,7 @@ const model = ref([
 <template>
   <ul class="py-10">
     <template v-for="(item, i) in model" :key="item">
-      <app-menu-item  :class="i > 0 ? 'mt-4' : null" :item="item" :index="i"></app-menu-item>
+      <app-menu-item  :class="i > 0 ? 'mt-4' : null" :item="item" :index="i" ></app-menu-item>
     </template>
   </ul>
 </template>

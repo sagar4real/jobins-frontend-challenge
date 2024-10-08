@@ -37,6 +37,22 @@ const orders = ref<Order[]>([
     method: "Debit Card",
     status: "Canceled",
   },
+  {
+    id: 4,
+    customer: "Bob Johnson",
+    date: "2024-10-03",
+    total: "$75.00",
+    method: "Debit Card",
+    status: "Canceled",
+  },
+  {
+    id: 5,
+    customer: "Bob Johnson",
+    date: "2024-10-03",
+    total: "$75.00",
+    method: "Debit Card",
+    status: "Canceled",
+  },
 ]);
 
 // Function to return the appropriate class for status
